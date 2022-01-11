@@ -49,16 +49,20 @@
 #  I |   |   |   |   |   |   |   |   |   |   |  
 #  J |   |   |   |   |   |   |   |   |   |   |
 # ---------------------------------------------
-# Misses: o         Patrol ships (2 squares): 4
-# Hits: x             Submarines (3 squares): 3
+# Misses: "o"       Patrol ships (2 squares): 4
+# Hits: "x"           Submarines (3 squares): 3
 #                     Destroyers (4 squares): 2
 #                     Battleship (5 squares): 1
 # ---------------------------------------------
 #            Remaining attacks:   25
 # ---------------------------------------------
-# Enter coordinates for next attack (e.g A1): 
+# Enter letter coordinate for next attack (e.g A):
+# Enter number coordinate for next attack (e.g 1):
 
-require 'adjudicator.rb'
-require 'generate_board.rb'
-require 'attack.rb'
-require 'update_board.rb'
+require './adjudicator.rb'
+# require 'generate_board.rb'
+# require 'attack.rb'
+# require 'update_board.rb'
+
+@adjudicator = Adjudicator.new
+@adjudicator.start_menu
